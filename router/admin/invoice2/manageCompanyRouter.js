@@ -6,7 +6,7 @@ const {
   CreateinvoiceCompany,
   UpdateinvoiceCompany,
   DeleteinvoiceCompany,
-} = require("../../../controller/Invoice/manageCompany");
+} = require("../../../controller/invoice/manageCompany");
 
 const manageCompany = express.Router();
 

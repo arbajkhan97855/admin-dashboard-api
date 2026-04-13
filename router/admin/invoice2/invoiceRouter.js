@@ -1,6 +1,6 @@
 const express = require("express")
 const {verifyToken} = require("../../../middleware/jwt");
-const { GetInvoice, SingleInvoice, CreateInvoice, UpdateInvoice, DeleteInvoice, SendInvoice } = require("../../../controller/Invoice/invoiceController");
+const { GetInvoice, SingleInvoice, CreateInvoice, UpdateInvoice, DeleteInvoice, SendInvoice } = require("../../../controller/invoice/invoiceController");
 const upload = require("../../../middleware/upload")
 const uploadEmailAttachment = require("../../../middleware/uploadEmailAttachment");
 
