@@ -13,8 +13,8 @@ const DetailRouter = require("./manage_api/tableDetailRouter");
 const AdditionDetailRouter = require("./manage_api/tableAdditionRouter");
 const MemberRouter = require("./manage_api/tableMemberRouter");
 
-const InvoiceRouter = require("./Invoice/invoiceRouter");
-const smtpRouter = require("./Invoice/smtpRouter");
+const InvoiceRouter = require("./invoice/invoiceRouter");
+const smtpRouter = require("./invoice/smtpRouter");
 const manageCompany = require("./invoice/manageCompanyRouter");
 const TicketRouter = require("./Tickets/ticketRouter");
 
