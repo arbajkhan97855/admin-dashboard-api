@@ -13,7 +13,7 @@ app.use(
   "/upload",
   express.static(path.join(__dirname, "upload"), {
     setHeaders: (res, path, stat) => {
-      res.set("Access-Control-Allow-Origin", "http://localhost:5173");
+      res.set("Access-Control-Allow-Origin", "https://admin-dashboard-mu-bay-37.vercel.app");
       res.set("Access-Control-Allow-Credentials", "true");
     },
   })
@@ -26,9 +26,13 @@ app.use(express.json())
 app.use(express.urlencoded({extended : false}))
 // cookies
 app.use(cors({
-  origin: "http://localhost:5173", 
+  origin: [
+    "https://admin-dashboard-mu-bay-37.vercel.app", 
+    "http://localhost:5173"                      
+  ],
   credentials: true
 }));
+
 app.use(cookieParser());
 // cookies
 
